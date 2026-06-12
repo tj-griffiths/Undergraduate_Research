@@ -1,5 +1,3 @@
-The folder contains all my research work. As it currently stands, for two groups: UW Ion Trap & UW N-Body Shop.
-
 N-Body Shop: 
 Investigation of integration methods for systems with discontinuous forces, particularly Monte Carlo methods for modeling self-interacting dark matter. 
 Developed and implemented advanced numerical integration methods for systems with discontinuous forces, focusing on leapfrog algorithm optimization. 
