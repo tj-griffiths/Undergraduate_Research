@@ -10,8 +10,12 @@ trap quantum computing and one in astrophysical numerical methods.
 
 ## `Ion/` — Characterizing Vapor Pressure Profiles for BaMg Alloy
 
-Ion Trap Research Group, University of Washington  
+Ion Trap Research Group, University of Washington
 Supervisor: Prof. Boris Blinov
+
+**Published:** J. Gunnell, T. Griffiths, and B. B. Blinov, *"Barium Magnesium
+Alloy as Source of Atomic Ba for Ion Trapping,"* [arXiv:2603.20956](https://arxiv.org/abs/2603.20956)
+(2026).
 
 Elemental barium is the preferred ion species for many trapped-ion quantum
 computing platforms due to its long-lived metastable states and accessible
@@ -31,7 +35,8 @@ materials, with comparable peak partial pressures of $2$–$2.5 \times 10^{-7}$
 Torr. The BaMg alloy produced equivalent vapor without requiring inert
 atmosphere handling. Subsequent trapping experiments by the group successfully
 loaded $^{138}\text{Ba}^+$ ions from a BaMg oven source, confirming viability as
-a practical substitute. The full study is available in `Ion/BaMg_work.pdf`.
+a practical substitute. The full study is published on arXiv (above) and
+also available in `Ion/BaMg_work.pdf`.
 
 ### Notebooks
 
@@ -67,7 +72,7 @@ Ion/
 
 ## `N-Body/` — Correction Methods to the Leapfrog Numerical Integrator
 
-University of Washington Astronomy Department  
+University of Washington Astronomy Department
 Affiliated with the N-Body Shop group
 
 The second-order leapfrog integrator is standard in astrophysical simulations
@@ -85,12 +90,12 @@ boundary crossing is detected ($x_i \cdot x_{i+1} \leq 0$):
 $t_c = -x_i/v_{i+1/2} + t_i$ and applies split velocity kicks:
 
 $$v_b = v_i + \frac{-x_i}{v_{i+1/2}} \cdot F(x_i), \qquad
-v_{i+1} = v_b + \!\left(\frac{x_i}{v_{i+1/2}} + dt\right) F(x_{i+1})$$
+v_{i+1} = v_b + \left(\frac{x_i}{v_{i+1/2}} + dt\right) F(x_{i+1})$$
 
 **Timestep correction** — splits the timestep at the crossing point:
 
 $$\Delta t_1 = -x_i/v_{i+1}, \quad \Delta t_2 = dt - \Delta t_1, \qquad
-v_{i+1} = v_i + F(x_i)\,\Delta t_1 + F(x_{i+1})\,\Delta t_2$$
+v_{i+1} = v_i + F(x_i) \Delta t_1 + F(x_{i+1}) \Delta t_2$$
 
 Both are tested against an absolute-value force ($F = -g\,\text{sign}(x)$,
 true discontinuity) and an arctangent force
