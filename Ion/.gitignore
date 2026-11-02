@@ -1,3 +1,5 @@
-__pycahce__
+__pycache__/
 laser_sessions
 laser_practice.ipynb
+ablation_calcs.ipynb
+RGAData/
